@@ -27,6 +27,7 @@ int main(){
                 // Criar repeticao alternada entre jogador chutar primeiro e pc chutar primeiro:
             for(int rodada = 1; rodada <=100; rodada++){
                 sleep(1.5);
+                printf("------------------- Rodada %d -------------------\n", rodada);
                 printf("O jogador pode jogar de 0 a %d.\nO computador pode jogar de 0 a %d.\n\n", jogmax, npcmax);
                 sleep(3);
             if(rodada % 2 == 1){
