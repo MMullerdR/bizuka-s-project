@@ -86,11 +86,11 @@ int main(){
                 }
                 else if(jogmax == 0){
                     printf("VOCE GANHOU O JOGO! BIZUQUEIRO GALO!");
-                    break;  // se for o fim do jogo jogador
+                    return 0;  // se for o fim do jogo jogador
                 }
                 else if(npcmax == 0){
                     printf("Bah, tu e ruim pia. Perdeu pro computador.");
-                    break;  // se for o fim do jogo pc
+                    return 0;  // se for o fim do jogo pc
                 } }
             // Rodada do jogador chutar primeiro --------------------------------------------------------------
 //------------------------------------------------------------------------------------------------------------------
@@ -154,11 +154,11 @@ int main(){
                 }
                 else if(jogmax == 0){
                     printf("VOCE GANHOU O JOGO! BIZUQUEIRO GALO!");
-                    break;  // se for o fim do jogo jogador
+                    return 0;  // se for o fim do jogo jogador
                 }
                 else if(npcmax == 0){
                     printf("Bah, tu e ruim pia. Perdeu pro computador.");
-                    break;  // se for o fim do jogo pc
+                    return 0;  // se for o fim do jogo pc
                 } }
             // Rodada do jogador chutar por segundo --------------------------------------------------------------
 //------------------------------------------------------------------------------------------------------------------
@@ -186,6 +186,10 @@ int main(){
         else if(strcmp(menu, "sair") == 0){
             printf("Programa encerrado pelo usuario.");
             break;
+        }
+
+        else if(strcmp(menu, "secreto") == 0){
+            printf("");
         }
 
     } // essa chave fecha o while que repete o programa caso o infeliz do usuario digite algo diferente dos comandos do menu
